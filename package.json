@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "github-build": "ng build --configuration production --base-href 'https://evgenyshaikovskiy.github.io/meal-planner-frontend'",
+    "github-deploy": "npx angular-cli-ghpages --dir=dist/meal-planner-frontend/browser --no-silent"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +27,7 @@
     "@angular/cli": "^20.0.2",
     "@angular/compiler-cli": "^20.0.0",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.3",
     "angular-eslint": "20.3.0",
     "eslint": "^9.35.0",
     "eslint-config-prettier": "^10.1.8",
